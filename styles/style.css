@@ -1,0 +1,275 @@
+	/****************************************************************************
+ * Cornell University 
+ * Web Template with Two-line Unit Signature Banner
+ * Main CSS Rules
+ ****************************************************************************/
+ @import url('cu_identity.css');
+ @import url('reset.css');
+ @import url('frontpage.css');
+
+@font-face {font-family: 'DrogowskazMedium'; src: url('fonts/drogowskaz-webfont.eot'); src: local('☺'), url('fonts/drogowskaz-webfont.woff') format('woff'), url('fonts/drogowskaz-webfont.ttf') format('truetype'), url('fonts/drogowskaz-webfont.svg#webfontySac5fT8') format('svg'); font-weight: normal; font-style: normal;}
+
+/***********************************************
+	Headlines 
+************************************************/ 
+h2 {font-family: 'DrogowskazMedium', sans-serif; margin: 0 0 15px 0; font-size: 22px; font-weight: normal;}
+	
+h3 {font-family: 'DrogowskazMedium', sans-serif; clear: both; margin: 0 0 15px 0; font-size: 18px; line-height: 16px; font-weight: normal;}
+	
+h4 {font-family: 'DrogowskazMedium', sans-serif; margin: 15px 0 3px 0; font-size: 16px; font-weight: normal;}
+	
+
+/***********************************************
+	Text
+************************************************/
+p {margin: 0 0 15px 0; }
+	
+blockquote {margin: 0 30px;}
+	
+
+/***********************************************
+	Lists 
+************************************************/	
+ul,
+ol {margin: 0 0 15px 0; padding: 0; font-size: 13px; line-height: 16px;}
+	
+ul ul,
+ul ol,
+ol ol,
+ol ul {font-size: 10px;}
+	
+ul li {margin: 5px 0 5px 10px; padding: 0 0 0 0; list-style: none; list-style-image: url(../images/layout/bullet.gif);}
+ 
+ol li {margin: 5px 0 5px 30px;}
+ 
+dl {margin: 0 0 15px 0; line-height: 16px;}
+	
+dt {margin: 0 0 3px 0; font-size: 12px; font-weight: normal;}
+	
+dd {margin: 0 0 15px 0; font-size: 13px; line-height: 16px;}
+	
+
+/***********************************************
+	Links 
+************************************************/
+a {border:none; color: #A38052; text-decoration: none;}
+
+a:visited {color: #6C5A1D;}
+	
+a:hover {text-decoration:underline;}
+	
+a:active {color: #6C5A1D; font-weight:normal;}
+
+
+/****************************************************************************
+ * Images
+ ****************************************************************************/
+img {border: 0;}
+ 
+
+/****************************************************************************
+ * Tables
+ ****************************************************************************/
+table,
+tr,
+th,
+td {margin: 0; padding: 0; border: 0; font-size: 13px;}
+	
+table {margin: 15px 0; border-bottom: 1px solid #e7e7e7; caption-side: bottom;}
+	
+th {padding: 0 15px 5px 15px; font-weight: normal; font-style:italic; text-align: left; color: #888;}
+	
+td,
+tbody th {padding: 5px 8px; border-top: 1px solid #e7e7e7; font-size: 14px; line-height: 16px; vertical-align: top;}
+	
+tbody th {font-weight: normal; color: #222; text-align: right;}
+
+tbody tr.odd,
+tbody tr.odd td {background:#eee;}
+
+tbody tr.even,
+tbody tr.even td {background:#fff;}
+	
+tfoot td {background:#fff;}
+
+caption {margin: 0 0 15px 0; text-align: left; color: #888; font-size: 11px;}	 
+
+select,
+textarea {font-family: verdana,arial,helvetica,sans-serif; font-size: 10px;}
+	
+hr {height: 1px;  border: 0px solid gray;}
+  
+html.js body label {font-size:12px; font-weight:normal;}
+
+html.js fieldset.collapsible legend a {font-size:12spx;}
+
+/****************************************************************************
+ * TinyMCE Editor
+ ****************************************************************************/
+body#tinymce {background:none;}
+
+/**************************************************************************
+	Main Layout
+**************************************************************************/
+body { 	margin: 0; padding: 0; font-family:georgia, times, serif; color: #222;background: white url(../images/layout/page_bg.jpg) repeat-x left top; font-size: 14px; line-height: 18px;}
+
+#header {position:relative; margin:0 auto 30px; width: 1000px;  height:162px; background: url(../images/layout/header.png) no-repeat center top; }
+
+#headerlink {position:absolute; top:0; right:100px; width: 500px; height:150px; border:none; text-decoration:none;}
+
+#header h1 {position:absolute; left:-9999em;}
+
+
+/****************************************************************************
+ * Breadcrumbs
+ ****************************************************************************/
+#breadcrumbs {float: left; width: 100%; background:#e6e6e6; border-top: 1px solid #b3b3aa; padding: 0 0;}
+
+.wrapper  {margin: 0 auto; width: 1000px; padding: 3px 0 3px 0;}
+
+
+/****************************************************************************
+ * Content Sections
+ ****************************************************************************/
+#wrap {float: left; width: 100%; }
+ 
+#content {margin: 0 auto; width: 1000px;}
+	
+#main {float: right; padding: 0 0 20px; width: 100%; position:relative;}
+	
+/* two-column pages */
+.left-sidebar #wrap { }
+	
+.right-sidebar #wrap {}
+	
+.sidebars #wrap {}
+	
+.left-sidebar #main,
+.right-sidebar #main {float: right; width: 740px;}
+	
+.sidebars #main {float: right; width: 550px;}
+ 
+
+
+/****************************************************************************
+ * Left Sidebar
+ ****************************************************************************/
+#left-sidebar {min-height:600px; width: 200px; margin;right:20px; border-right:2px dotted #988567; padding-right:20px;}
+
+.sidebars #left-sidebar {color: #666; float: left; clear: left; width: 200px;}
+	
+.left-sidebar #left-sidebar {color: #666; float: left; clear: left; ; }
+
+.left-sidebar-block {margin: 0 0 15px 0; padding: 5px 0 5px 15px;}
+	
+#left-sidebar-block-first {margin-top: 25px;}
+	
+#left-sidebar h2 {margin: 0 0 5px 0; font-size: 17px; font-weight: normal; border-bottom:2px dotted #988567; padding: 0 0 5px;}
+	
+#left-sidebar h3 {margin: 0 0 5px 0; font-size: 15px; font-weight: normal;}
+	
+#left-sidebar p {margin: 0 0 10px 0; font-size: 12px; line-height: 15px;}
+	
+#left-sidebar ul {font-size: 14px; padding: 10px 0 0 10px;}
+	
+#left-sidebar ul li {margin: 2px 0 8px 5px; padding: 0 0 0 10px;}
+	
+#left-sidebar ul li.leaf {list-style: none; list-style-image: none; background: url(../images/layout/bullet.gif) no-repeat top left 0 5px; padding: 0 0 0 10px;}
+	
+#left-sidebar ul li.expanded {list-style-image:none; background: url(../images/layout/menu-expanded.png) no-repeat 0 7px; list-style-type:none; padding: 0 0 0 10px;}
+	
+#left-sidebar ul li.collapsed {list-style-image:none; background: url(../images/layout/menu-collapsed.png) no-repeat 0 7px; list-style-type:none; padding: 0 0 0 10px;}
+	
+#left-sidebar li a {font-size:15px; }	
+#left-sidebar li a:visited,
+#left-sidebar li a.active {color: #6C5A1D;}
+
+ /****************************************************************************
+ * Bio Pages
+ ****************************************************************************/
+div.view-biographies2 {position:relative; overflow:auto; float:left; }
+
+div.view-biographies2 .view-content {width:500px; float:left;}
+
+div.view-biographies2 .view-header h3 {border-bottom:1px dotted #988567; margin-right:230px; padding-bottom:3px;}
+
+div.view-biographies2 .field-content { display:block;}
+
+div.view-biographies2 div.stat {margin:0 0 15px;}
+
+div.view-biographies2 label {display:inline; font-weight:bold !important; }
+
+div.view-biographies2 .view-display-id-attachment_1 h2 {display:block; margin:0 0 10px; padding:5px 8px; color:white; background: #988567;}
+
+/* audio part */
+div.view-biographies2 .view-display-id-attachment_2 .views-row {margin-bottom:15px; border-bottom:1px dotted #988567; padding:0 0 10px 0;} 
+
+/* photos part */
+div.view-biographies2 .view-display-id-attachment_3 {top:0; right:0; margin:0; display:inline-block; text-align:center; padding:0 0 20px 0; width:210px; z-index:100; background: url('../images/layout/photocorners.png') no-repeat center top; float:right;}
+
+div.view-biographies2 .view-display-id-attachment_3 .view-header {width:210px; text-align:center; position:relative; top:15px;}
+
+div.view-biographies2 .view-display-id-attachment_3 .view-header h3 {border:none; margin:0 0 20px; padding:0;}
+
+div.view-biographies2 .view-display-id-attachment_3 .view-content {width:170px; margin: 23px auto; float:none; text-align:center;}
+
+div.view-biographies2 .view-display-id-attachment_3 .views-row {display:block; margin-bottom:10px;}
+
+div.view-biographies2 .image-gallery-nodes ul {text-align:center;}
+div.view-biographies2 .view .image-gallery-nodes ul li {height:auto; width:auto; margin:0;}
+
+div.view-biographies2 .view-display-id-attachment_3 .views-row label {font-weight:bold; display:block;}
+
+/* Sort icons which lack labels on Bio Index pg*/
+a[title="sort by "]:before {content:"Sort ";}
+
+
+ /****************************************************************************
+ * Photo Page
+ ****************************************************************************/
+a.imagefield-lightbox2 {display:inline-block;padding:10px;background:url(../images/layout/photoframe.png) no-repeat center center;}
+a.imagefield-lightbox2-Thumbnail_150 {display:inline-block; padding:10px;background:url(../images/layout/photoframe_150.png) no-repeat center center;}
+
+#lightbox a {color:white;}
+
+div.view-Photos2 h3 {display:inline-block; margin:0 0 5px;}
+div.view-Photos2 .item-list {display:inline-block; margin:0 15px 0 0; vertical-align:top;}
+div.view-Photos2 .view-content li {display:inline-block; margin: 0 15px 10px 0; height:auto; vertical-align:top;}
+
+div.view-Photos2 label  {display:block; font-weight:bold;}
+div.view-Photos2 .views-row-first label  {display:block; font-weight:bold;}
+div.view-Photos2 label[for=edit-subject] {display:inline; font-weight:bold;}
+
+.views-exposed-widgets {}
+
+.bef-checkboxes {width:650px; height:150px; border:1px solid black; overflow:auto; margin-bottom:10px;}
+.views-exposed-form .views-exposed-widget {padding:0; float:left; clear:left; margin:0 0 5px;}
+.views-exposed-form .views-exposed-widget .form-submit {margin:0; }
+
+#outerImageContainer {-moz-border-radius:8px 8px 0 0; -webkit-border-radius:8px 8px 0 0; border-radius:8px 8px 0 0; background-color:#777 !important;}
+#imageDataContainer {-moz-border-radius:0 0 8px 8px; -webkit-border-radius:0 0 8px 8px; border-radius:0 0 8px 8px;  background-color:#777 !important;}
+
+/****************************************************************************
+ * Footer
+ ****************************************************************************/
+#footer {float: left; width: 100%; height:258px; background: url('../images/layout/footer.jpg') no-repeat center bottom;}
+
+#footer-content {margin: 0 auto; padding: 15px 0 25px 0; width: 630px; color: #333; position:relative; top:200px;  right:10px; }
+
+#footer ul.menu {display:block; margin: 0 auto; text-align:center;}
+
+#footer ul.menu li { list-style:none;  float:left; margin:0 8px 0 0; background:none; padding:0 8px 0 0; border-right:1px solid #6C5A1D; }
+#footer ul.menu li.last {border:none;}
+	
+#footer a  {color: #6C5A1D; }
+#footer a:active {border-color: #ccadad;}
+ 
+
+/****************************************************************************
+ * Miscellaneous
+ ****************************************************************************/
+#skipnav {position: absolute; top: -1000em; left: -1000em;}
+
+.hidden {display: none;}
+	
+			

@@ -1,0 +1,17 @@
+; $Id:  $
+name = Dynkin Collection
+description = Cornell University Dynkin Collection Theme
+version = 2
+core = 6.x
+engine = phptemplate
+stylesheets[all][] = styles/style.css
+
+regions[banner]         = Banner (CU Identity)
+regions[header]         = Header
+regions[frontpgtabs] 	= Front Page Tabs
+regions[contenttop] 	= Content Top
+regions[content] 		= Content
+regions[contentbottom] 	= Content Bottom
+regions[right]          = Right sidebar
+regions[left]         	= Left sidebar
+regions[footer]         = Footer
